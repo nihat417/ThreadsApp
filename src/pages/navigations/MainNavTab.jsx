@@ -1,6 +1,7 @@
 import React from 'react';
 
 import HomePage from '../common/Home/main/HomePage';
+import Search from '../common/Search/main/Search';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -9,18 +10,24 @@ import NavTab from './NavTab';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
+const SearchStack = createNativeStackNavigator()
 
 const MyHomeStack = () => {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen
-        options={{headerShown: false}}
-        name="Home"
-        component={HomePage}
-      />
+      <HomeStack.Screen options={{headerShown: false}} name="Home" component={HomePage}/>
     </HomeStack.Navigator>
   );
 };
+
+const MySearchStack = () =>{
+  return (
+    <SearchStack.Navigator>
+      <SearchStack.Screen options={{headerShown:false}} name='Search' component={Search}/>
+    </SearchStack.Navigator>
+  )
+}
+
 
 const MainNavTab = () => {
   return (
@@ -30,6 +37,7 @@ const MainNavTab = () => {
         screenOptions={{headerShown: false}}
         tabBar={probs => <NavTab {...probs} />}>
         <Tabs.Screen name="Home" component={MyHomeStack} />
+        <Tabs.Screen name="Search" component={MySearchStack} />
       </Tabs.Navigator>
     </NavigationContainer>
   );

@@ -14,6 +14,7 @@ import SearchTab from '../assets/Svg/SearchTab'
 import WriteTab from '../assets/Svg/WriteTab'
 import LikeTab from '../assets/Svg/LikeTab'
 import AccauntTab from '../assets/Svg/AccauntTab'
+import InputSearch from '../assets/Svg/InputSearch'
 
 
 export const StyledView = styled(View);
@@ -24,5 +25,5 @@ export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 
 export {ThreadsLogo,AddButton,Dots,Heart,Comment,Repost,Send,TreeSvg,HeartFiled,HomeTab
-    ,SearchTab,WriteTab,LikeTab,AccauntTab,
+    ,SearchTab,WriteTab,LikeTab,AccauntTab,InputSearch,
 }
