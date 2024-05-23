@@ -9,6 +9,11 @@ import Repost from '../assets/Svg/Repost'
 import Send from '../assets/Svg/Send'
 import TreeSvg from '../assets/Svg/TreeSvg'
 import HeartFiled from '../assets/Svg/HeartFiled'
+import HomeTab from '../assets/Svg/HomeTab'
+import SearchTab from '../assets/Svg/SearchTab'
+import WriteTab from '../assets/Svg/WriteTab'
+import LikeTab from '../assets/Svg/LikeTab'
+import AccauntTab from '../assets/Svg/AccauntTab'
 
 
 export const StyledView = styled(View);
@@ -18,4 +23,6 @@ export const StyledButton = styled(TouchableOpacity);
 export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 
-export {ThreadsLogo,AddButton,Dots,Heart,Comment,Repost,Send,TreeSvg,HeartFiled}
+export {ThreadsLogo,AddButton,Dots,Heart,Comment,Repost,Send,TreeSvg,HeartFiled,HomeTab
+    ,SearchTab,WriteTab,LikeTab,AccauntTab,
+}

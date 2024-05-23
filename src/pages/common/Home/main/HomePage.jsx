@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { StyledView,StyledText,StyledButton, StyledScrollView,StyledImage,ThreadsLogo, AddButton, Dots, Repost, Send, Heart, Comment, TreeSvg, HeartFiled } from '../../../../common/StyledComponents';
+import { StyledView, StyledScrollView,ThreadsLogo, } from '../../../../common/StyledComponents';
 import ThreadItem from '../components/ThreadItem';
 import ThreadCommentItem from '../components/ThreadCommentItem';
 
 
-const Home = () => {
+const HomePage = () => {
     
   return (
     <StyledScrollView className = "bg-[#0D0D0D]">
@@ -22,11 +22,9 @@ const Home = () => {
             {/*  */}
             <ThreadItem/>
 
-            
-
         </StyledView>
     </StyledScrollView>
   )
 }
 
-export default Home;
+export default HomePage;
