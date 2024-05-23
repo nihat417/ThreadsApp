@@ -10,7 +10,7 @@ const Home = () => {
         </StyledView>
 
         
-        <StyledView className='flex mt-[30px] ml-[30px] mr-[30px] p-[5px]'>
+        <StyledView className='flex mt-[30px] ml-[10px] mr-[10px] p-[5px]'>
             <StyledView className='flex flex-row'>
                 <StyledView>
                     <StyledImage className='h-[46px] w-[46px] mr-[20px] rounded-[20px]' source={require("../../../../assets/Images/anadearmas.jpg")}/>
@@ -20,16 +20,16 @@ const Home = () => {
                 </StyledView>
                 <StyledView>
                     <StyledText className ="text-white text-[16px] mb-[5px]">Ana De Armas</StyledText>
-                    <StyledView className='w-[220px]'><StyledText className='text-white text-[14px]'>Failures are stepping stones to success.Embrace them, learn from them, and keepmoving forward</StyledText></StyledView>
+                    <StyledView className='w-[260px]'><StyledText className='text-white text-[14px]'>Failures are stepping stones to success.Embrace them, learn from them, and keepmoving forward</StyledText></StyledView>
                 </StyledView>
-                <StyledView className='flex flex-row mr-[50px]'>
+                <StyledView className='flex flex-row'>
                     <StyledText className='text-[#A0A0A0] text-[15px] '>49m</StyledText>
                     <Dots/>
                 </StyledView>
             </StyledView>
             <StyledView className='flex flex-row justify-between mt-[5px]'>
                 <StyledView ></StyledView>
-                <StyledView className='flex flex-row  mr-[70px]'>
+                <StyledView className='flex flex-row  mr-[100px]'>
                     <Heart className = "mr-[10px]"/>
                     <Comment className = "mr-[10px]"/>
                     <Repost className = "mr-[10px]"/>
@@ -39,43 +39,7 @@ const Home = () => {
             </StyledView>
             <StyledView className='flex flex-row justify-between mt-[2px]'>
                 <StyledView ></StyledView>
-                <StyledView className='flex flex-row  mr-[165px]'>
-                    <StyledText className='text-[#A0A0A0]'>1 Like</StyledText>
-                </StyledView>
-                <StyledView></StyledView>
-            </StyledView>
-
-        </StyledView>
-        <StyledView className='flex mt-[30px] ml-[30px] mr-[30px] p-[5px]'>
-            <StyledView className='flex flex-row'>
-                <StyledView>
-                    <StyledImage className='h-[46px] w-[46px] mr-[20px] rounded-[20px]' source={require("../../../../assets/Images/anadearmas.jpg")}/>
-                    <StyledButton className='absolute bottom-6 right-4'>
-                        <AddButton/>
-                    </StyledButton>
-                </StyledView>
-                <StyledView>
-                    <StyledText className ="text-white text-[16px] mb-[5px]">Ana De Armas</StyledText>
-                    <StyledView className='w-[220px]'><StyledText className='text-white text-[14px]'>Failures are stepping stones to success.Embrace them, learn from them, and keepmoving forward</StyledText></StyledView>
-                </StyledView>
-                <StyledView className='flex flex-row mr-[50px]'>
-                    <StyledText className='text-[#A0A0A0] text-[15px] '>49m</StyledText>
-                    <Dots/>
-                </StyledView>
-            </StyledView>
-            <StyledView className='flex flex-row justify-between mt-[5px]'>
-                <StyledView ></StyledView>
-                <StyledView className='flex flex-row  mr-[70px]'>
-                    <Heart className = "mr-[10px]"/>
-                    <Comment className = "mr-[10px]"/>
-                    <Repost className = "mr-[10px]"/>
-                    <Send className = "mr-[10px]"/>
-                </StyledView>
-                <StyledView></StyledView>
-            </StyledView>
-            <StyledView className='flex flex-row justify-between mt-[2px]'>
-                <StyledView ></StyledView>
-                <StyledView className='flex flex-row  mr-[165px]'>
+                <StyledView className='flex flex-row  mr-[200px]'>
                     <StyledText className='text-[#A0A0A0]'>1 Like</StyledText>
                 </StyledView>
                 <StyledView></StyledView>
