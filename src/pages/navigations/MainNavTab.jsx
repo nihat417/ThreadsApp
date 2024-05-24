@@ -36,8 +36,8 @@ const MainNavTab = () => {
         initialRouteName="Home"
         screenOptions={{headerShown: false}}
         tabBar={probs => <NavTab {...probs} />}>
-        <Tabs.Screen name="Home" component={MyHomeStack} />
-        <Tabs.Screen name="Search" component={MySearchStack} />
+        <Tabs.Screen name="HomeTab" component={MyHomeStack} />
+        <Tabs.Screen name="SearchTab" component={MySearchStack} />
       </Tabs.Navigator>
     </NavigationContainer>
   );
