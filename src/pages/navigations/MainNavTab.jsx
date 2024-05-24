@@ -2,16 +2,19 @@ import React from 'react';
 
 import HomePage from '../common/Home/main/HomePage';
 import Search from '../common/Search/main/Search';
+import Activitiy from '../common/Activity/main/Activitiy';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import NavTab from './NavTab';
+
 import { TabBarVisibilityContext,TabBarVisibilityProvider } from '../../contexts/TabBarVisibilityContext';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
-const SearchStack = createNativeStackNavigator()
+const SearchStack = createNativeStackNavigator();
+const ActivitiyStack = createNativeStackNavigator();
 
 const MyHomeStack = () => {
   return (
@@ -24,8 +27,16 @@ const MyHomeStack = () => {
 const MySearchStack = () =>{
   return (
     <SearchStack.Navigator>
-      <SearchStack.Screen options={{headerShown:false}} name='SearchPage' component={Search}/>
+      <SearchStack.Screen options={{headerShown:false}} name = 'SearchPage' component={Search}/>
     </SearchStack.Navigator>
+  )
+};
+
+const MyActivityStack = () =>{
+  return (
+    <ActivitiyStack.Navigator>
+      <ActivitiyStack.Screen options={{headerShown:false}} name = "ActivityPage" component={Activitiy}/>
+    </ActivitiyStack.Navigator>
   )
 }
 
@@ -43,6 +54,7 @@ const MainNavTab = () => {
             >
               <Tabs.Screen name="Home" component={MyHomeStack} />
               <Tabs.Screen name="Search" component={MySearchStack} />
+              <Tabs.Screen name="Activity" component={MyActivityStack} />
             </Tabs.Navigator>
           </NavigationContainer>
         )}
