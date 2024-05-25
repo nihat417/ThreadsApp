@@ -9,7 +9,7 @@ const NavTab = ({state, navigation}) => {
         <StyledButton onPress={()=>navigation.navigate('Search')}><SearchTab/></StyledButton>
         <StyledButton ><WriteTab/></StyledButton>
         <StyledButton onPress={()=> navigation.navigate('Activity')}><LikeTab/></StyledButton>
-        <StyledButton><AccauntTab/></StyledButton>
+        <StyledButton onPress={()=>navigation.navigate('Profile')}><AccauntTab/></StyledButton>
     </StyledView>
   )
 }

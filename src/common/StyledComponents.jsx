@@ -15,6 +15,13 @@ import WriteTab from '../assets/Svg/WriteTab'
 import LikeTab from '../assets/Svg/LikeTab'
 import AccauntTab from '../assets/Svg/AccauntTab'
 import InputSearch from '../assets/Svg/InputSearch'
+import ActivityHeart from '../assets/Svg/ActivityHeart'
+import NewFollow from '../assets/Svg/NewFollow'
+import Verified from '../assets/Svg/Verified'
+import Globus from '../assets/Svg/Globus'
+import Instagram from '../assets/Svg/Instagram'
+import ProfileMenu from '../assets/Svg/ProfileMenu'
+import ThreadsIc from '../assets/Svg/ThreadsIc'
 
 
 export const StyledView = styled(View);
@@ -25,5 +32,6 @@ export const StyledScrollView = styled(ScrollView);
 export const StyledImage = styled(Image);
 
 export {ThreadsLogo,AddButton,Dots,Heart,Comment,Repost,Send,TreeSvg,HeartFiled,HomeTab
-    ,SearchTab,WriteTab,LikeTab,AccauntTab,InputSearch,
+    ,SearchTab,WriteTab,LikeTab,AccauntTab,InputSearch,NewFollow,ActivityHeart,Verified,
+    ProfileMenu,Globus,Instagram,ThreadsIc,
 }

@@ -10,11 +10,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import NavTab from './NavTab';
 
 import { TabBarVisibilityContext,TabBarVisibilityProvider } from '../../contexts/TabBarVisibilityContext';
+import Profile from '../common/Profile/main/Profile';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
 const SearchStack = createNativeStackNavigator();
 const ActivitiyStack = createNativeStackNavigator();
+const ProfileStack = createNativeStackNavigator();
 
 const MyHomeStack = () => {
   return (
@@ -40,6 +42,14 @@ const MyActivityStack = () =>{
   )
 }
 
+const MyProfileStack = () =>{
+  return (
+    <ProfileStack.Navigator>
+      <ProfileStack.Screen options={{headerShown:false}} name='ProfilePage' component={Profile}/>
+    </ProfileStack.Navigator>
+  )
+}
+
 
 const MainNavTab = () => {
   return (
@@ -55,6 +65,7 @@ const MainNavTab = () => {
               <Tabs.Screen name="Home" component={MyHomeStack} />
               <Tabs.Screen name="Search" component={MySearchStack} />
               <Tabs.Screen name="Activity" component={MyActivityStack} />
+              <Tabs.Screen name="Profile" component={MyProfileStack}/>
             </Tabs.Navigator>
           </NavigationContainer>
         )}
