@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { StyledView,StyledButton,StyledScrollView,StyledImage,StyledInput, StyledText, ThreadsIc } from '../../../../common/StyledComponents';
+import { useNavigation } from '@react-navigation/native';
 import ProfileHeader from '../components/ProfileHeader';
 import ThreadItem from '../../Home/components/ThreadItem';
 
 const Profile = () => {
+    const navigation = useNavigation();
   return (
     <StyledView className='h-full bg-[#0D0D0D]'>
 
@@ -35,7 +37,7 @@ const Profile = () => {
 
             {/*  */}
             <StyledView className='flex flex-row justify-center mt-[20px]'>
-                <StyledButton className='mx-[10px] border-[2px] py-[10px] px-[50px] rounded-[10px] border-[#2F2F2F]'><StyledText className='text-[16px] text-white'>Edit profile</StyledText></StyledButton>
+                <StyledButton  onPress={() => navigation.navigate('EditProfile')} className='mx-[10px] border-[2px] py-[10px] px-[50px] rounded-[10px] border-[#2F2F2F]'><StyledText className='text-[16px] text-white'>Edit profile</StyledText></StyledButton>
                 <StyledButton className='mx-[10px] border-[2px] py-[10px] px-[50px] rounded-[10px] border-[#2F2F2F]'><StyledText className='text-[16px] text-white'>Share profile</StyledText></StyledButton>
             </StyledView>
             {/*  */}
@@ -51,6 +53,9 @@ const Profile = () => {
             </StyledScrollView>
 
         </StyledView>
+
+
+
 
     </StyledView>
   )

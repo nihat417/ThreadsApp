@@ -22,6 +22,8 @@ import Globus from '../assets/Svg/Globus'
 import Instagram from '../assets/Svg/Instagram'
 import ProfileMenu from '../assets/Svg/ProfileMenu'
 import ThreadsIc from '../assets/Svg/ThreadsIc'
+import LeftArrow from '../assets/Svg/LeftArrow'
+import Close from '../assets/Svg/Close'
 
 
 export const StyledView = styled(View);
@@ -33,5 +35,5 @@ export const StyledImage = styled(Image);
 
 export {ThreadsLogo,AddButton,Dots,Heart,Comment,Repost,Send,TreeSvg,HeartFiled,HomeTab
     ,SearchTab,WriteTab,LikeTab,AccauntTab,InputSearch,NewFollow,ActivityHeart,Verified,
-    ProfileMenu,Globus,Instagram,ThreadsIc,
+    ProfileMenu,Globus,Instagram,ThreadsIc,Close,LeftArrow,
 }

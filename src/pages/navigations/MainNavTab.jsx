@@ -11,6 +11,8 @@ import NavTab from './NavTab';
 
 import { TabBarVisibilityContext,TabBarVisibilityProvider } from '../../contexts/TabBarVisibilityContext';
 import Profile from '../common/Profile/main/Profile';
+import EditProfileHeader from '../common/Profile/components/EditProfileHeader';
+import EditProfile from '../common/Profile/main/EditProfile';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createNativeStackNavigator();
@@ -46,6 +48,7 @@ const MyProfileStack = () =>{
   return (
     <ProfileStack.Navigator>
       <ProfileStack.Screen options={{headerShown:false}} name='ProfilePage' component={Profile}/>
+      <ProfileStack.Screen options={{header:()=><EditProfileHeader/>}} name='EditProfile' component={EditProfile}/>
     </ProfileStack.Navigator>
   )
 }
