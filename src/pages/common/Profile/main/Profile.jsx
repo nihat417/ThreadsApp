@@ -9,9 +9,7 @@ const Profile = () => {
   return (
     <StyledView className='h-full bg-[#0D0D0D]'>
 
-        {/*  */}
-        <ProfileHeader/>
-        {/*  */}
+      
 
         <StyledView className='ml-[10px]'>
             {/*  */}
