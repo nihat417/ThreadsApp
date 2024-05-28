@@ -1,10 +1,10 @@
-import {StyledView, StyledText} from './src/common/StyledComponents';
-import React from 'react';
-import Home from './src/pages/common/Home/main/HomePage';
+import React,{useState} from 'react';
 import MainNavTab from './src/pages/navigations/MainNavTab';
+import AuthNav from './src/pages/common/Auth/AuthNav';
 
 const App = () => {
-  return <MainNavTab />;
+  const isAut = useState(true);
+  return isAut ? <MainNavTab/> : <AuthNav/>;
 };
 
 export default App;

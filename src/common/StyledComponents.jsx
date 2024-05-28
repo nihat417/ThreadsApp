@@ -32,6 +32,8 @@ import Help from '../assets/Svg/Help'
 import Notfication from '../assets/Svg/Notfication'
 import FlwInvite from '../assets/Svg/FlwInvite'
 import FileShare from '../assets/Svg/FileShare'
+import InstagramBigLogo from '../assets/Svg/InstagramBigLogo'
+import MetaLogo from '../assets/Svg/MetaLogo'
 
 
 export const StyledView = styled(View);
@@ -44,5 +46,5 @@ export const StyledImage = styled(Image);
 export {ThreadsLogo,AddButton,Dots,Heart,Comment,Repost,Send,TreeSvg,HeartFiled,HomeTab
     ,SearchTab,WriteTab,LikeTab,AccauntTab,InputSearch,NewFollow,ActivityHeart,Verified,
     ProfileMenu,Globus,Instagram,ThreadsIc,Close,LeftArrow,FlwInvite,User,About,Privacy,Language
-    ,Help,Notfication,FileShare,
+    ,Help,Notfication,FileShare,InstagramBigLogo,MetaLogo,
 }
