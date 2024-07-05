@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 const NewthreadHeader = () => {
     const navigation =useNavigation();
   return (
-    <StyledView className='flex flex-row items-center bg-[#000] py-[30px] px-[20px]'>
+    <StyledView className='flex flex-row items-center bg-[#0D0D0D] py-[30px] px-[20px]'>
         <StyledButton onPress={()=>navigation.goBack()}>
             <StyledView>
                 <Close/>
